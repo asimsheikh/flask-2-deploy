@@ -6,4 +6,6 @@ app = Flask(__name__)
 def index():
     return 'Hello azure app'
 
-
+@app.route('/azure')
+def azure():
+    return 'We are in azure!!!'
